@@ -3,13 +3,13 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov=hello --cov=mylib test_*.py
+	python -m pytest -vv test_*.py
 
 format:
 	black *.py mylib/*.py
 
 lint:
-	pylint --disable=R,C ignore-pattern=test_*?.py *.py mylib/*py
+	pylint --disable=R,C *.py mylib/*py
 
 container-lint:
 	docker run --rm -i hadolint/hadolint < Dockerfile

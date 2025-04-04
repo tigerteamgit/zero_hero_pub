@@ -1,5 +1,10 @@
 pylint
+click
 pytest
+pytest-cov
+fastapi
+uvicorn
 black
 wikipedia
 ipython
+git+https://github.com/LIADD/yake
