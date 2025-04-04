@@ -18,7 +18,7 @@ def add_cmd(x, y):
     """
 
     #Use colored output to print the result
-    click.echo(f"{x} + {y} = {add(x, y)}", fg='green')
+    click.echo(f"{x} + {y} = {add(x, y)}")
 
 @cli.command("sub")
 @click.argument('x', type=float)
@@ -29,7 +29,7 @@ def sub_cmd(x, y):
     Example:
     ./calCLI.py sub 2 1
     """
-    click.echo(f"{x} - {y} = {sub(x, y)}", fg='green')
+    click.echo(f"{x} - {y} = {sub(x, y)}")
 
 @cli.command("mul")
 @click.argument('x', type=float)
@@ -40,7 +40,7 @@ def mul_cmd(x, y):
     Example:
     ./calCLI.py mul 2 3
     """
-    click.echo(f"{x} * {y} = {mul(x, y)}", fg='green')
+    click.echo(f"{x} * {y} = {mul(x, y)}")
 
 @cli.command("div")
 @click.argument('x', type=float)
@@ -51,7 +51,7 @@ def div_cmd(x, y):
     Example:
     ./calCLI.py div 6 3
     """
-    click.echo(f"{x} / {y} = {div(x, y)}", fg='green')
+    click.echo(f"{x} / {y} = {div(x, y)}")
 
 @cli.command("pow")
 @click.argument('x', type=float)
@@ -62,7 +62,7 @@ def power_cmd(x, y):
     Example:
     ./calCLI.py power 2 3
     """
-    click.echo(f"{x} ^ {y} = {pow(x, y)}", fg='green')
+    click.echo(f"{x} ^ {y} = {pow(x, y)}")
 
 if __name__ == "__main__":
     cli()

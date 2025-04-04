@@ -21,3 +21,5 @@ deploy:
 	@echo "Deploying to production..."
 
 all: install lint test format deploy
+
+MAKE := make
