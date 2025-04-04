@@ -7,4 +7,5 @@ uvicorn
 black
 wikipedia
 ipython
-git+https://github.com/LIADD/yake
+ipdb
+geopy
