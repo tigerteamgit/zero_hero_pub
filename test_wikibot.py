@@ -1,4 +1,4 @@
-from wikibot import scrape
+from mylib.wikibot import scrape
 
 
 def test_scrape():
