@@ -1,4 +1,4 @@
-from hello import add
+from mylib.hello import add
 
 
 def test_add():
